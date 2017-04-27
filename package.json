@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/usgs/earthquake-details-ws/issues"
   },
-  "homepage": "https://github.com/usgs/earthquake-details-ws#readme"
+  "homepage": "https://github.com/usgs/earthquake-details-ws#readme",
+  "engines": {
+    "node": "4.2.4"
+  }
 }
