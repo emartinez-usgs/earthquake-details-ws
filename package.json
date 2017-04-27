@@ -1,0 +1,39 @@
+{
+  "name": "earthquake-details-ws",
+  "version": "0.1.0",
+  "description": "Web services to access additional earthquake details not provided in the typical summary results.",
+  "main": "src/index.js",
+  "dependencies": {
+    "express": "4.15.2",
+    "extend": "3.0.0",
+    "xml2json": "0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "inquirer": "3.0.6",
+    "nodemon": "1.11.0",
+    "npm-run-all": "4.0.2",
+    "watch": "1.0.2"
+  },
+  "scripts": {
+    "configure": "node configurer/configure.js",
+    "dev": "npm-run-all --parallel watch start",
+    "lint": "./node_modules/eslint/bin/eslint.js \"src/**/*.js\"",
+    "start": "nodemon --watch src src/index.js",
+    "watch": "watch \"npm run lint\" src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usgs/earthquake-details-ws.git"
+  },
+  "keywords": [
+    "USGS",
+    "Earthquake"
+  ],
+  "author": "Eric Martinez <emartinez@usgs.gov>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/usgs/earthquake-details-ws/issues"
+  },
+  "homepage": "https://github.com/usgs/earthquake-details-ws#readme"
+}
