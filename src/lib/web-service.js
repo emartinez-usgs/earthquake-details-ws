@@ -139,8 +139,6 @@ var WebService = function (options) {
       request.query.starttime = `${year}-${month}-${day}`;
     }
 
-    process.stdout.write('query = ' + JSON.stringify(request.query, null, 2) + '\n');
-
     try {
       handler = _this.handlers[method];
 
