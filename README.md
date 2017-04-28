@@ -21,3 +21,22 @@ $ npm install
 $ npm run configure
 $ npm start
 ```
+
+### Run with Docker
+
+There are two steps to running the application in Docker:
+ - Build
+ - Configure
+ - Start
+
+These steps are completed with the following commands (note, output from each
+commadn is not shown here).
+```
+$ cd .../earthquake-details/ws
+$ docker build -t usgs/earthquake-details-ws:latest .
+$ $EDITOR docker-compose.yml
+$ docker-compose up -d
+```
+> Note: When creating the docker-compose.yml file, you should specify the
+> necessary configuration values in INI format. See docker-compose.yml for
+> details.

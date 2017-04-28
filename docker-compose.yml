@@ -1,0 +1,25 @@
+build:
+  image: usgs/earthquake-details-ws:latest
+  ports:
+    - 8000:8000
+  env_file:
+    - ./docker-compose.ini
+    # Note This ENV file does not exist by default. Please create this file
+    #      and include the following configuration parameters:
+    #
+    #
+    # ; This file is used when running the application from within a container
+    # ; locally.
+
+    # ; Fully-qualified path to static resources within project
+    # webDir=/hazdev-project/src/htdocs
+
+    # ; URL path where application may be accessed
+    # MOUNT_PATH=/some/path
+
+    # ; Port for application to listen on, should match the right-side "PORT"
+    # ; from "port:PORT" specified above above.
+    # PORT=8000
+
+    # ; Where FDSN data comes from
+    # FDSN_URL=https://earthquake.usgs.gov/fdsnws/event/1/query.geojson

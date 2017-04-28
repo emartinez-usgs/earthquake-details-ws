@@ -1,0 +1,9 @@
+.dockerignore
+.editorconfig
+.eslintrc.json
+.git
+.gitattributes
+.gitignore
+Dockerfile
+node_modules
+src/conf/config.json
