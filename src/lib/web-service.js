@@ -10,6 +10,7 @@ var AmplitudeHandler = require('./amplitude-handler'),
 var _DEFAULTS;
 
 _DEFAULTS = {
+  webDir: process.cwd() + '/src/htdocs',
   MOUNT_PATH: '',
   PORT: 8000,
   FDSN_URL: '/fdsnws/event/1/query.geojson'
@@ -317,6 +318,12 @@ var WebService = function (options) {
 
     // handle dynamic requests
     app.get(_mountPath + '/:method', _this.get);
+
+    // Demo :: Custom route to crash the application
+    app.get(_mountPath + '/boom', (req, res/*, next*/) => {
+      _this.log(req, res, 'Boom!', 500);
+      process.exit(-1);
+    });
 
     // rest fall through to htdocs as static content.
     app.use(_mountPath, express.static(_docRoot, {fallthrough: true}));

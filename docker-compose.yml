@@ -2,6 +2,7 @@ build:
   image: usgs/earthquake-details-ws:latest
   ports:
     - 8000:8000
+  restart: unless-stopped
   env_file:
     - ./docker-compose.ini
     # Note This ENV file does not exist by default. Please create this file
