@@ -1,0 +1,12 @@
+configurer
+node_modules
+.dockerignore
+.eslintrc.json
+.gitignore
+docker-compose.ini
+docker-compose.yml
+docker-entrypoint.sh
+Dockerfile
+manifest.yml
+README.md
+src/conf
