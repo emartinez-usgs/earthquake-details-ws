@@ -1,0 +1,3 @@
+applications:
+  - name: earthquake-eqdetails
+    buildpack: nodejs_buildpack
