@@ -6,12 +6,12 @@
   "dependencies": {
     "express": "4.15.2",
     "extend": "3.0.0",
+    "nodemon": "1.11.0",
     "xml2json": "0.11.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",
     "inquirer": "3.0.6",
-    "nodemon": "1.11.0",
     "npm-run-all": "4.0.2",
     "watch": "1.0.2"
   },
@@ -37,6 +37,6 @@
   },
   "homepage": "https://github.com/usgs/earthquake-details-ws#readme",
   "engines": {
-    "node": "4.2.4"
+    "node": "4.8.2"
   }
 }
